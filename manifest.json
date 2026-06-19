@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Sticker Shortcuts",
+  "version": "1.0",
+  "description": "Replaces text shortcuts like :john with sticker images in rich text editors.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": []
+}
