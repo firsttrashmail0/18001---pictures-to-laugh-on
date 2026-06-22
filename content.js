@@ -24,7 +24,8 @@
   const SHORTCUTS = {
     ":john": "images/john.png",
     ":black-friday": "images/black-friday.png",
-    ":static-guy": "images/static-guy.png"
+    ":static-guy": "images/static-guy.png",
+    ":paul": "images/paul.png"
   };
 
   const MAX_SHORTCUT_LEN = Math.max(...Object.keys(SHORTCUTS).map(s => s.length));
